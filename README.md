@@ -76,7 +76,7 @@ telnet <IP address>
 If you successfully connect, you can use the arrow keys to navigate around the main menu.  *Please remember that this is not your device and that to change the configuration or otherwise tamper with it is not only rude, it's probably illeagl.*
 The device you've connected to is an old DSL modem, most likely from the early 2000s.
 
-Send the ctrl+] key combination to break out of the telnet session, and issue the 'quit' command at the prompt.
+When you're done, send the ctrl+] key combination to break out of the telnet session, and issue the 'quit' command at the prompt.
 
 For one final scare tactic, let's perform the following query:
 ```bash
@@ -87,6 +87,6 @@ Yes, be afraid. Be very afraid.
 ## Exercise 2 - The Shodan Web Interface
 
 So it turns out that the CLI is not actually the easiest or most engaging method of interacting with Shodan. Shodan has a nice web interface that we'll now spend some time using. 
-Click Applications > Firefox ESR to launch the Firefox browser. Enter 'shodan.io' into the address bar once Firefox loads. 
+Click ``bash Applications > Firefox ESR``` to launch the Firefox browser. Enter 'shodan.io' into the address bar once Firefox loads. Shodan does not require an account or login to do basic searches. For instance, enter '198.35.26.96' into the search field. You'll see that this is one of the IP addresses used by Wikipedia.  On the left side of the page There is basic information about the IP address itself, and on the right side you'll see the information that Shodan has gathered about the services running on this IP address.
 
 
