@@ -87,6 +87,22 @@ Yes, be afraid. Be very afraid.
 ## Exercise 2 - The Shodan Web Interface
 
 So it turns out that the CLI is not actually the easiest or most engaging method of interacting with Shodan. Shodan has a nice web interface that we'll now spend some time using. 
-Click ```bash Applications > Firefox ESR``` to launch the Firefox browser. Enter 'shodan.io' into the address bar once Firefox loads. Shodan does not require an account or login to do basic searches. For instance, enter '198.35.26.96' into the search field. You'll see that this is one of the IP addresses used by Wikipedia.  On the left side of the page There is basic information about the IP address itself, and on the right side you'll see the information that Shodan has gathered about the services running on this IP address.
+Click ```Applications > Firefox ESR``` to launch the Firefox browser. Enter ```shodan.io``` into the address bar once Firefox loads. Shodan does not require an account or login to do basic searches. For instance, enter ```198.35.26.96``` into the search field. You'll see that this is one of the IP addresses used by Wikipedia.  On the left side of the page There is basic information about the IP address itself, and on the right side you'll see the information that Shodan has gathered about the services running on this IP address. HTTP header information for both port 80 and 443 has been gathered and indexed, along with the SSL certificate for the site.
+
+In order to perform more advanced queries, a free Shodan account is required.  Please login using your credentials for the next steps.
+
+Enter ```port:32400``` into the search field. This should give us a good idea f how many publicly accessible Plex servers are available online. Note that the left column gives interesting statistics regarding geography, orgainziations, operating systems, and other details about TCP port 32400. We can gather that the Plex is most popular in the United States, running on Linux and being hosted on Comcast internet connections. Notice on the right column, you'll notice the little Plex icon.  This is the favicon for Plex, which is itself a searchable property as well.
+
+The uptick in the number of botnets in the last few years has been largely due to the increased number of unsecured, internet connected devices such as cameras, thermostats, etc. Next we'll see if we can find some of those systems as well.  Enter ```Server: SQ-WEBCAM``` This search string is common among a popular line of inexpensive security camera DVRs. You'll see an alarming number of results that are returned, and this is only one type of DVR. Right click on one of the search results that says '--- VIDEO WEB SERVER ---' and choose 'Open Link in New Tab'.  It might take a couple of tries, but eventually you'll get the login page for someone's DVR. If you're feeling really adventurous, try logging in with the default credntials of admin/admin.  You're now logged into someone's DVR which is probably ripe to be owned by deploying an exploit to act as a pivot point for an intruder to get into their network.
+
+For some more fun, let's see how many Cisco VPN gateways are listening in Provo, UT. Enter ```webvpn city:Provo``` into the search field.  How about routers that are still vulnerable to the 2013 insecure TCP port 32764 expoit? ```port:32764```
+
+## Conclusion
+
+As you can see, the days of needing an NMAP scan to complete before attacking a target are in the past with tools like Shodan. Spend a minute or two exploring the rest of the Shodan interface. The 'Explore' tab contains clickable links to some easy to use queries. Have fun and be safe!
+
+
+
+
 
 
