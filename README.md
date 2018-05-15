@@ -18,7 +18,7 @@ In order to execute this lab, there are a few things you will need to get starte
 ```bash
 easy_install shodan
 ```
-3. We need to initiate our API key.
+3. We need to initiate our API key. You can copy this from the text file called 'api-key.txt' from your home directory.
 ```bash
 shodan init <API key>
 ```
