@@ -45,7 +45,9 @@ At this point you may see a lot of information or a little but at the very least
 Let's see what Shodan knows about a few more common IP addresses:
 ```bash
 shodan host 8.8.8.8
+
 shodan host 1.1.1.1
+
 shodan host 198.60.22.2
 ```
 The last host in that list is a local internet provider in Utah.  As you can see, Shodan has cataloged information for each of those popular DNS providers.
