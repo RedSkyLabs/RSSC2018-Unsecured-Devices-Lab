@@ -87,6 +87,6 @@ Yes, be afraid. Be very afraid.
 ## Exercise 2 - The Shodan Web Interface
 
 So it turns out that the CLI is not actually the easiest or most engaging method of interacting with Shodan. Shodan has a nice web interface that we'll now spend some time using. 
-Click ``bash Applications > Firefox ESR``` to launch the Firefox browser. Enter 'shodan.io' into the address bar once Firefox loads. Shodan does not require an account or login to do basic searches. For instance, enter '198.35.26.96' into the search field. You'll see that this is one of the IP addresses used by Wikipedia.  On the left side of the page There is basic information about the IP address itself, and on the right side you'll see the information that Shodan has gathered about the services running on this IP address.
+Click ```bash Applications > Firefox ESR``` to launch the Firefox browser. Enter 'shodan.io' into the address bar once Firefox loads. Shodan does not require an account or login to do basic searches. For instance, enter '198.35.26.96' into the search field. You'll see that this is one of the IP addresses used by Wikipedia.  On the left side of the page There is basic information about the IP address itself, and on the right side you'll see the information that Shodan has gathered about the services running on this IP address.
 
 
