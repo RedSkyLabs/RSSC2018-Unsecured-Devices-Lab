@@ -34,13 +34,23 @@ Shodan will return the public IP address that you're using to query its servers.
 ```bash
 shodan host <Your IP address>
 ```
-At this point you may see a lot of information or a little but at the very least you'll see (scroll up if necessary):
+At this point you may see a lot of information or a little but at the very least you'll should see (scroll up if necessary):
 * Hostname(s)
 * City
 * Country
 * Organization (ISP or company)
 * Count of discovered open ports
 * Information gathered about any open ports.
+
+If Shodan does not return anything for your IP address, try another that you might know from work or school. Or you can try one of these
+
+```bash
+151.101.129.140
+
+66.151.147.38
+
+166.251.122.240
+```
 
 Let's see what Shodan knows about a few more common IP addresses:
 ```bash
